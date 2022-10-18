@@ -1209,10 +1209,12 @@ input {
         width: 100%;
         text-align: center;
         padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .right-header a {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     .header-line {
@@ -1222,6 +1224,16 @@ input {
     .user-info {
         display: flex!important;
         justify-content: center;
+        width: 100%;
+    }
+
+    .line-acc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .set-acc {
+        text-align: center;
     }
 
     .users {
@@ -1231,7 +1243,7 @@ input {
     }
 
     .aws-acc {
-        margin-top: 20px;
+        margin-top: 30px;
         font-size: 25px;
     }
 
@@ -1241,9 +1253,8 @@ input {
     }
 
     .user-info {
-        margin-top: 20px;
-        border-top: 1px solid #4F4F4F;
-        padding-top: 15px;
+        border-bottom: 1px solid #4F4F4F;
+        padding-bottom: 20px;
     }
 
     .mobile {
@@ -1284,6 +1295,35 @@ input {
 
     .table-scroll {
         overflow-x: scroll;
+    }
+
+    .user-info:hover .hover-menu {
+        display: none;
+    }
+
+    .right-header.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-info {
+        order: 1;
+    }
+
+    .right-header > a:nth-child(1) {
+        order: 2;
+    }
+
+    .right-header > a:nth-child(2) {
+        order: 3;
+    }
+
+    .right-header > a:nth-child(3) {
+        order: 4;
+    }
+
+    .right-header > a:nth-child(4) {
+        order: 5;
     }
 }
 
